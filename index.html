@@ -161,6 +161,56 @@
             width: 50%;
         }
 
+        
+        .x-list-plugin-listaction .x-button.x-button-select {
+            display: none;
+        }
+
+        .x-list-plugin-listaction-enabled.x-list-plugin-listaction .x-button.x-button-select {
+            width: 22px;
+            height: 22px;
+            border-radius: 30px;
+            border:2px solid rgba(255,255,255,0.4);
+            position: absolute;
+            top: 35%;
+            left: -22px;
+            font-size: 0;
+            background: transparent;
+            display: block;
+        }
+
+        .x-list-plugin-listaction .x-item-selected .x-button.x-button-select {
+            border-color: #fff;
+            background: rgb(198,101,113); /* Old browsers */
+            background: -moz-linear-gradient(top,  rgba(198,101,113,1) 0%, rgba(164,9,28,1) 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(198,101,113,1)), color-stop(100%,rgba(164,9,28,1))); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top,  rgba(198,101,113,1) 0%,rgba(164,9,28,1) 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top,  rgba(198,101,113,1) 0%,rgba(164,9,28,1) 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top,  rgba(198,101,113,1) 0%,rgba(164,9,28,1) 100%); /* IE10+ */
+            background: linear-gradient(to bottom,  rgba(198,101,113,1) 0%,rgba(164,9,28,1) 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c66571', endColorstr='#a4091c',GradientType=0 ); /* IE6-9 */
+
+            box-shadow: 1px 1px 10px #222;
+        }
+
+        .x-list-plugin-listaction.x-list-plugin-listaction-enabled .x-item-selected .x-button.x-button-select .x-button-icon.x-icon-mask {
+            width: 13px;
+            height: 13px;
+            margin: 2px;
+            -webkit-mask-size: 13px;
+            background-image: -webkit-linear-gradient(top, #ffffff,#ffffff 3%,#f2f2f2);
+
+        }
+
+        .x-list.x-list-plugin-listaction .x-dock-body {
+            position: relative;
+        }
+
+        .x-list-plugin-listaction.x-list-plugin-listaction-enabled .x-inner.x-list-item-inner {
+            -webkit-transform: translateX(35px);
+        }
+
+
 
     </style>
     <!-- The line below must be kept intact for Sencha Command to build your application -->
